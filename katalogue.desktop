@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=katalogue
+Exec=katalogue
+Icon=katalogue
+Type=Application
+Comment=An application for indexing your CDs/ZIPs etc.
+Comment[pl]=Program do katalogowania zawartości płyt CD/zipów itp.
+Categories=Qt;KDE;Utility;Archiving;
