@@ -21,7 +21,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Katalogue 0.4 is an application for indexing your CDs/ZIPs etc.
 
 %description -l pl
-Katalogue 0.4 jest programem s³u¿±cym do kataloagowania zawarto¶ci
+Katalogue 0.4 jest programem s³u¿±cym do katalogowania zawarto¶ci
 dowolonego katalogu.
 
 %prep
