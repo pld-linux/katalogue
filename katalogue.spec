@@ -3,12 +3,13 @@ Summary(pl):	Program do katalogowania zawarto¶ci p³yt CD/zipów itp
 Name:		katalogue
 Version:	0.4
 %define	_rc	rc1
-Release:	0.%{_rc}.1
+Release:	0.%{_rc}.3
 Epoch:		0
 License:	GPL
 Group:		Applications/Archiving
 Source0:	http://katalogue.szluug.org/download/%{name}-%{version}.tar.gz
 # Source0-md5:	61723af155b31a869e297bf5fd19130a
+Source1:	%{name}.desktop
 URL:		http://katalogue.szluug.org
 BuildRequires:	kdelibs-devel >= 3.2
 BuildRequires:	qt-devel >= 3.2
@@ -25,7 +26,8 @@ Katalogue 0.4 jest programem s³u¿±cym do katalogowania zawarto¶ci
 dowolonego katalogu.
 
 %prep
-%setup -q -n %{name}-%{version} -a 0
+%setup -q
+install %{SOURCE1} src
 
 %build
 %configure
@@ -33,10 +35,12 @@ dowolonego katalogu.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{_desktopdir}
 
 %{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT
+	DESTDIR=$RPM_BUILD_ROOT \
+	kde_htmldir=%{_kdedocdir} \
+	shelldesktopdir=%{_desktopdir} \
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -45,4 +49,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README TODO
 %attr(755,root,root) %{_bindir}/*
-%{_datadir}/*
+%{_desktopdir}/*.desktop
+%{_iconsdir}/*/*/apps/%{name}.png
+%{_datadir}/apps/%{name}
+%{_kdedocdir}/*
