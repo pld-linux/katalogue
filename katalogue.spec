@@ -6,7 +6,7 @@ Version:	0.4
 Release:	0.%{_rc}.1
 Epoch:		0
 License:	GPL
-Group:		X11/Applications/File
+Group:		Applications/Archiving
 Source0:	http://katalogue.szluug.org/download/%{name}-%{version}.tar.gz
 # Source0-md5:	61723af155b31a869e297bf5fd19130a
 URL:		http://katalogue.szluug.org
@@ -21,7 +21,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Katalogue 0.4 is an application for indexing your CDs/ZIPs etc.
 
 %description -l pl
-Katalogue 0.4 jest programem s³u¿±cym do kataloagowania zawarto¶ci dowolonego katalogu.
+Katalogue 0.4 jest programem s³u¿±cym do kataloagowania zawarto¶ci
+dowolonego katalogu.
 
 %prep
 %setup -q -n %{name}-%{version} -a 0
@@ -45,9 +46,3 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS ChangeLog NEWS README TODO
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/*
-
-$Log: katalogue.spec,v $
-Revision 1.1  2005-03-15 14:50:08  spider
-- init
-- spec done by Maciej Kasprzyk
-- cosmetics
