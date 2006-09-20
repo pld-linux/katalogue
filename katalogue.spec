@@ -12,10 +12,10 @@ Source0:	http://katalogue.szluug.org/download/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 URL:		http://katalogue.szluug.org
 BuildRequires:	automake
-BuildRequires:	kdelibs-devel >= 3.2
-BuildRequires:	qt-devel >= 3.2
-Requires:	kdelibs >= 3.2
-Requires:	qt >= 3.2
+BuildRequires:	kdelibs-devel >= 9:3.2
+BuildRequires:	qt-devel >= 6:3.2
+Requires:	kdelibs >= 9:3.2
+Requires:	qt >= 6:3.2
 Provides:	katalogue
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
