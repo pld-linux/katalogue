@@ -1,8 +1,8 @@
+%define	_rc	rc1
 Summary:	An application for indexing your CDs/ZIPs etc
 Summary(pl):	Program do katalogowania zawarto¶ci p³yt CD/zipów itp
 Name:		katalogue
 Version:	0.4
-%define	_rc	rc1
 Release:	0.%{_rc}.3
 Epoch:		0
 License:	GPL
@@ -14,8 +14,8 @@ URL:		http://katalogue.szluug.org
 BuildRequires:	automake
 BuildRequires:	kdelibs-devel >= 3.2
 BuildRequires:	qt-devel >= 3.2
-Requires:	qt >= 3.2
 Requires:	kdelibs >= 3.2
+Requires:	qt >= 3.2
 Provides:	katalogue
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
