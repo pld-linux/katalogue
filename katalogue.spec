@@ -1,6 +1,6 @@
 %define	_rc	rc1
 Summary:	An application for indexing your CDs/ZIPs etc
-Summary(pl):	Program do katalogowania zawarto∂ci p≥yt CD/zipÛw itp
+Summary(pl.UTF-8):   Program do katalogowania zawarto≈õci p≈Çyt CD/zip√≥w itp
 Name:		katalogue
 Version:	0.4
 Release:	0.%{_rc}.3
@@ -22,9 +22,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Katalogue 0.4 is an application for indexing your CDs/ZIPs etc.
 
-%description -l pl
-Katalogue 0.4 jest programem s≥uø±cym do katalogowania zawarto∂ci
-no∂nikÛw CD/ZIP/itp.
+%description -l pl.UTF-8
+Katalogue 0.4 jest programem s≈Çu≈ºƒÖcym do katalogowania zawarto≈õci
+no≈õnik√≥w CD/ZIP/itp.
 
 %prep
 %setup -q
