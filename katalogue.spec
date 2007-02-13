@@ -1,6 +1,6 @@
 %define	_rc	rc1
 Summary:	An application for indexing your CDs/ZIPs etc
-Summary(pl.UTF-8):   Program do katalogowania zawartości płyt CD/zipów itp
+Summary(pl.UTF-8):	Program do katalogowania zawartości płyt CD/zipów itp
 Name:		katalogue
 Version:	0.4
 Release:	0.%{_rc}.3
